@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+    
+</head>
+<body>
+    <div class = "container">
+        <header>
+            <div class="icon"><img src="/icons/weather.svg" alt=""></div>
+        </header>
+        <div class="weather-title">
+            <h1>Weather App</h1>
+            <p>Enter Your City Below And Press Enter</p>
+            </div>
+            <div class ="center">
+            <form action="/" method="POST">
+                
+            <input type = "text" name = "city"  placeholder = "Enter a city">
+        
+            </form>
+        </div>
+            <div class="result">
+                <% if(temp !== null) {%>
+                    <h1 class ="temp"><%= Math.round(temp-273.15) %></h1>
+                 <% }%>   
+                 <h4>degree celcius</h4>
+                </br>
+                
+                <div class="icon-des ">
+                    <% if(icon !== null) {%>
+                        <img class="icon" src="http://openweathermap.org/img/w/<%= icon %>.png" alt="">
+                         
+                     <% }%>  
+
+                     <% if(des !== null) {%>
+                        
+                        <h3><%= des %></h3>
+                         
+                     <% }%>  
+
+                     
+
+                     
+                
+                </div>
+
+                <% if(city !== null) {%>
+                        
+                    <h1 class = "city"><%= city%></p>
+                     
+                 <% }%>  
+                
+            </div>
+            <footer>
+            </br>
+                <h2>Created By - Siddhartha Gupta</h2>
+            </footer>
+    </div>
+</body>
+</html>
