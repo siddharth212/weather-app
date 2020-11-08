@@ -1,6 +1,8 @@
 # Weather-App
 
-Its a simple weather application which will show you the weather forecast of any city of any country in the world.
+Its a simple weather application it will show you the weather forecast of any city of any country in the world. 
+
+
 
 # How to Setup
 
