@@ -1,4 +1,4 @@
-# weather-app
+# Weather-App
 
 Its a simple weather application which will show you the weather forecast of any city of any country in the world.
 
